@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PuntoShop</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/java.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="media/logo.png" alt="logo" />
+    </div>
+    <h1>PuntoShop</h1>
+    <p>Tienda virtual de ropa</p>
+  </header>
+
+  <nav>
+    <a href="#descuentos">Descuentos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#citas">Citas</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#desafio">Desafío</a>
+  </nav>
+
+  <section class="hero">
+    <h2>ROPA ALTA GAMA</h2>
+  </section>
+
+  <div class="container">
+    <!-- DESCUENTOS -->
+    <section id="descuentos" class="descuentos">
+      <h2>Descuentos</h2>
+      <ul>
+        <li>Air Max 97 + Nike Tech - ₡50,000</li>
+        <li>Air Force One - ₡18,000</li>
+        <li>Puma XL - ₡20,000</li>
+        <li>Conjunto ADIDAS - ₡30,000</li>
+        <li>3 Camisas polo - ₡20,000</li>
+      </ul>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="gallery-section">
+      <h2>Lo más vendido del pedazo</h2>
+      <div class="gallery">
+        <img src="media/img1.jpg" alt="ropa1" />
+        <img src="media/img2.jpg" alt="ropa2" />
+        <img src="media/img3.jpg" alt="ropa3" />
+        <img src="media/img4.jpg" alt="ropa4" />
+        <img src="media/img5.jpg" alt="ropa5" />
+        <img src="media/img6.jpg" alt="ropa6" />
+        <img src="media/img7.jpg" alt="ropa7" />
+        <img src="media/img8.png" alt="ropa8" />
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="zoom" />
+        <div class="nav">
+          <span class="prev">&#10094;</span>
+          <span class="next">&#10095;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITA -->
+    <section id="citas">
+      <h2>Reserve su visita</h2>
+      <p>Agenda tu próxima visita a nuestra tienda exclusiva</p>
+
+      <!-- ✅ Formulario corregido y funcional con Formspree -->
+      <form id="reserva-form" action="https://formspree.io/f/meovozaq" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <input type="date" name="fecha" required />
+        <textarea name="detalles" rows="4" placeholder="Detalles de tu visita (opcional)"></textarea>
+        <button type="submit">Reservar</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        📍 Heredia, La Milpa<br />
+        📞 +506 6439-3165<br />
+        ✉️ 120400819g10.1@gmail.com
+      </p>
+
+      <h2>Haz tu consulta</h2>
+      <p>Atendemos rápido, escribe y pronto te respondemos!</p>
+
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="sugerencias" placeholder="Sugerencias" required />
+        <input type="email" name="reportes" placeholder="Reportes" required />
+        <button type="submit">Consulta o reporta</button>
+      </form>
+    </section>
+
+    <!-- DESAFÍO -->
+    <section id="desafio" class="juego-tienda">
+      <h2>🎮 Desafío PuntoShop</h2>
+      <p>Prueba este rompecabezas deslizable 🧩</p>
+      <div id="tablero"></div>
+      <button onclick="mezclar()">Reiniciar</button>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 PuntoShop. Todos los derechos reservados a Gerchal</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/nero_moiss?igsh=MTJIM2FsaTA4c2p5ZA==">Instagram</a> |
+      <a href="https://www.facebook.com/gerchall.vindasch">Facebook</a> |
+      <a href="https://www.tiktok.com/@nero_moiss?_r=1&_t=ZM-91MCccl2zpT">TikTok</a>
+    </div>
+    <div class="Gerchal">
+      <a href="#">IR AL INICIO</a>
+    </div>
+  </footer>
+
+</body>
+</html>
